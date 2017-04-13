@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/4 | xchaoinfo的博客</title>
+  <title>xlwings 让你的 Excel 飞起来  | xchaoinfo的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="xchaoinfo的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="xlwings 让你的 Excel 飞起来简介众所周知，VBA 可以很高效的操作 Excel，提高办公效率。在 Python 中，我们可以通过 pywin32 来调用 windows 系统的 API 来实现 VBA 的很多功能，但是写起来比较复杂。 开始之前, 回忆一下使用 Excel 的场景。我们会同时打开多个 Excel 文件, 多个 workbook, 每个 workbook 又可以用多个">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="xlwings 让你的 Excel 飞起来 ">
+<meta property="og:url" content="http://yoursite.com/2017/03/16/05-- xlwings 让你的 Excel 飞起来/index.html">
 <meta property="og:site_name" content="xchaoinfo的博客">
-<meta property="og:description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
+<meta property="og:description" content="xlwings 让你的 Excel 飞起来简介众所周知，VBA 可以很高效的操作 Excel，提高办公效率。在 Python 中，我们可以通过 pywin32 来调用 windows 系统的 API 来实现 VBA 的很多功能，但是写起来比较复杂。 开始之前, 回忆一下使用 Excel 的场景。我们会同时打开多个 Excel 文件, 多个 workbook, 每个 workbook 又可以用多个">
+<meta property="og:updated_time" content="2017-04-13T15:26:38.725Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xchaoinfo的博客">
-<meta name="twitter:description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
+<meta name="twitter:title" content="xlwings 让你的 Excel 飞起来 ">
+<meta name="twitter:description" content="xlwings 让你的 Excel 飞起来简介众所周知，VBA 可以很高效的操作 Excel，提高办公效率。在 Python 中，我们可以通过 pywin32 来调用 windows 系统的 API 来实现 VBA 的很多功能，但是写起来比较复杂。 开始之前, 回忆一下使用 Excel 的场景。我们会同时打开多个 Excel 文件, 多个 workbook, 每个 workbook 又可以用多个">
   
     <link rel="alternative" href="/atom.xml" title="xchaoinfo的博客" type="application/atom+xml">
   
@@ -152,36 +154,83 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-05-- xlwings 让你的 Excel 飞起来" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/13/04-- Python3 读写 csv /" class="archive-article-date">
-  	<time datetime="2017-04-13T14:46:42.461Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/04-- Python3 读写 csv /">Python3 读写 csv</a>
+    <h1 class="article-title" itemprop="name">
+      xlwings 让你的 Excel 飞起来 
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/16/05-- xlwings 让你的 Excel 飞起来/" class="archive-article-date">
+  	<time datetime="2017-03-16T08:39:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="xlwings-让你的-Excel-飞起来"><a href="#xlwings-让你的-Excel-飞起来" class="headerlink" title="xlwings 让你的 Excel 飞起来"></a>xlwings 让你的 Excel 飞起来</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>众所周知，VBA 可以很高效的操作 Excel，提高办公效率。在 Python 中，我们可以通过 pywin32 来调用 windows 系统的 API 来实现 VBA 的很多功能，但是写起来比较复杂。</p>
+<p>开始之前, 回忆一下使用 Excel 的场景。<br>我们会同时打开多个 Excel 文件, 多个 workbook, 每个 workbook 又可以用多个 sheet。<br>同时，我们还会在多个 sheet workbook Excel 窗口之间切换。<br>对一个或多个单元格进行增删改查，设置格式，合并分拆等操作。<br>利用 xlwings 这些操作都可以轻松搞定，一次编写彻底解决”手抽筋的问题” </p>
+<p>xlwings 是基于 BSD-licensed 的一个 Python 第三方的模块，对 pywin32 进行了封装，可以很方便的和 Excel 进行交互，它有以下优点：</p>
+<ol>
+<li>语法接近 VBA</li>
+<li>可以用 Python 代码取代 VBA 编写宏</li>
+<li>在 windows 可以用 Python 编写 Excel 用户自定义函数</li>
+<li>全功能支持 Numpy Pandas matplotlib 等科学计算库</li>
+<li>支持 Windows 和 MacOS</li>
+<li>支持 Py2.7 Py3.3+</li>
+</ol>
+<p>xlwings 可以让你的 Excel 飞起来，正如 Selenium 可以让你的浏览器飞起来一样。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>推荐使用 Anaconda <a href="https://www.continuum.io/downloads" target="_blank" rel="external">https://www.continuum.io/downloads</a> 来安装，可以省去很多麻烦，<br><figure class="highlight plain"><figcaption><span>install xlwings```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">使用 pip 安装，需要先手动安装 pywin32 下载地址</div><div class="line">https://sourceforge.net/projects/pywin32/files/pywin32/ </div><div class="line"></div><div class="line">安装 pywin32 后，使用 pip 安装即可</div><div class="line"></div><div class="line">```pip install xlwings</div></pre></td></tr></table></figure></p>
+<p>官方安装文档<br><a href="http://docs.xlwings.org/en/stable/installation.html" target="_blank" rel="external">http://docs.xlwings.org/en/stable/installation.html</a></p>
+<h3 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h3><h4 id="打开工作表"><a href="#打开工作表" class="headerlink" title="打开工作表"></a>打开工作表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">import xlwings as xw</div><div class="line"># 打开一个新的 workbook </div><div class="line">wb = xw.Book()</div><div class="line"># 打开当前目录已经存在的一个 workbook </div><div class="line">wb = xw.Book(&apos;FileName.xlsx&apos;)</div><div class="line"></div><div class="line"># 输入完整的路径打开一个 workbook </div><div class="line">FileName = &quot;C:\\python\\to\\file.xlsx&quot;</div><div class="line">FileName = r&quot;C:\python\to\file.xlsx&quot;</div><div class="line"># 注意 windows 字符 &quot;\&quot; 逃逸的问题</div><div class="line">wb = xw.Book(fn)</div></pre></td></tr></table></figure>
+<h4 id="打开-sheet-的三种方式"><a href="#打开-sheet-的三种方式" class="headerlink" title="打开 sheet 的三种方式"></a>打开 sheet 的三种方式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"># 打开第一个 sheet</div><div class="line">sheet = wb.sheets[0]</div><div class="line"># 打开名字为 &quot;xchaoinfo&quot; sheet</div><div class="line">sheet = wb.sheets[&quot;xchaoinfo&quot;]</div><div class="line"># 打开当前活动的 sheet</div><div class="line">sheet = wb.sheets.active</div></pre></td></tr></table></figure>
+<h4 id="读写数据到-sheet-中"><a href="#读写数据到-sheet-中" class="headerlink" title="读写数据到 sheet 中"></a>读写数据到 sheet 中</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"># 当前活动的 sheet 中读写一个单元格的数据</div><div class="line">&gt;&gt;&gt; import xlwings as xw</div><div class="line">&gt;&gt;&gt; wb = xw.Book()</div><div class="line">&gt;&gt;&gt; sht = wb.sheets.active</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).value = &quot;xchaoinfo&quot;</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).value</div><div class="line">&apos;xchaoinfo&apos;</div><div class="line"># 当前活动的 sheet 中读写一行单元格的数据</div><div class="line"># 将列表储存在A1：C1中</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).value=[&quot;name&quot;,&quot;age&quot;,&quot;gender&quot;]</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1:C1&apos;).value</div><div class="line">[&apos;name&apos;, &apos;age&apos;, &apos;gender&apos;]</div><div class="line"># 当前活动的 sheet 中读写一列单元格的数据</div><div class="line"># 将列表储存在A1:A3中</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).options(transpose=True).value=[&quot;xchaoinfo&quot;,18,1]</div><div class="line">&gt;&gt;&gt; sht.range(&quot;A1:A3&quot;).value</div><div class="line">[&apos;xchaoinfo&apos;, 18.0, 1.0]</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1:A3&apos;).value = [&quot;Robot&quot;, 20, 2]</div><div class="line">&gt;&gt;&gt; sht.range(&quot;A1:A3&quot;).value</div><div class="line">[&apos;Robot&apos;, 18.0, 1.0]</div><div class="line"># 当前活动的 sheet 中读写多行多列单元格的数据</div><div class="line"># 将2x2表格，即二维数组，储存在A1:B2中，如第一行1，2，第二行3，4</div><div class="line">&gt;&gt;&gt; wb = xw.Book()</div><div class="line">&gt;&gt;&gt; sht = wb.sheets.active</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).options(expand=&apos;table&apos;)=[[1,2],[3,4]]</div><div class="line">&gt;&gt;&gt; sht.range(&quot;A1&quot;).expand().value</div><div class="line">[[1.0, 2.0], [3.0, 4.0]]</div><div class="line"># expand 的详细用法请参考文档</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1:B2&apos;).value = [[1,2],[3,4]]</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1:B2&apos;).value</div><div class="line">[[1.0, 2.0], [3.0, 4.0]]</div></pre></td></tr></table></figure>
+<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><p>删除 Excel 文件中，满足条件的单元格所在的一整行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python3</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line"># @Date    : 2017-03-16 14:14:03</div><div class="line"># @Author  : xchaoinfo (xchaoinfo)</div><div class="line"># @github  : https://github.com/xchaoinfo</div><div class="line"></div><div class="line">import xlwings as xw</div><div class="line"></div><div class="line">fn = &quot;data.xlsx&quot;</div><div class="line"></div><div class="line"></div><div class="line">class DeleteTools(object):</div><div class="line">    &quot;&quot;&quot;删除满足某些条件的行</div><div class="line">    data.xlsx 中有很多重复的数据</div><div class="line">    需要删除那些重复的</div><div class="line">    &quot;&quot;&quot;</div><div class="line"></div><div class="line">    def __init__(self, fn):</div><div class="line">        super(DeleteTools, self).__init__()</div><div class="line">        self.ExistSet = set()</div><div class="line">        self.ToDelList = list()</div><div class="line">        self.fn = fn</div><div class="line"></div><div class="line">    def rule(self, value):</div><div class="line">        # 可以自定义规则来操作</div><div class="line">        pass</div><div class="line"></div><div class="line">    def Delete(self):</div><div class="line">        # visible 控制 Excel 打开是否显示界面</div><div class="line">        # add_book 控制是否添加新的 workbook</div><div class="line">        app = xw.App(visible=True, add_book=False)</div><div class="line">        # app.display_alerts = False</div><div class="line"></div><div class="line">        # 打开 data.xlsx 文件到 wookbook 中</div><div class="line">        wb = app.books.open(fn)</div><div class="line">        # 切换到当前活动的 sheet 中</div><div class="line">        sheet = wb.sheets.active</div><div class="line"></div><div class="line">        # 选择 A1 所在的一列</div><div class="line">        # 当 Excel 格式复杂的时候,不建议使用 expand</div><div class="line">        # 可以这样选择</div><div class="line">        ARange = sheet.range(&quot;A1:A100&quot;)</div><div class="line">        # ARange = sheet.range(&quot;A1&quot;).expand(&quot;down&quot;)</div><div class="line">        for A in ARange:</div><div class="line">            if str(A.value).strip() not in self.ExistSet:</div><div class="line">                self.ExistSet.add(str(A.value).strip())</div><div class="line">            else:</div><div class="line">                # address = A.address</div><div class="line">                # 获取 A 所在的位置坐标</div><div class="line">                self.ToDelList.append(A.address)</div><div class="line">                # print(A.value)</div><div class="line"></div><div class="line">        while self.ToDelList:</div><div class="line">            td = self.ToDelList.pop()</div><div class="line">            # 删除 A 所在的一行</div><div class="line">            sheet.range(td).api.EntireRow.Delete()</div><div class="line">        # 保存 wookbook</div><div class="line">        # 相当于Excel 的 Ctrl+S 快捷键</div><div class="line">        sheet.autofit()</div><div class="line">        wb.save()</div><div class="line">        app.quit()</div><div class="line"></div><div class="line"></div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    d = DeleteTools(fn)</div><div class="line">    d.Delete()</div></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>插上翅膀，让Excel飞起来——xlwings（一）<br><a href="http://www.jianshu.com/p/e21894fc5501" target="_blank" rel="external">http://www.jianshu.com/p/e21894fc5501</a><br>xlwings 官方文档<br><a href="http://docs.xlwings.org/en/stable/" target="_blank" rel="external">http://docs.xlwings.org/en/stable/</a></p>
+<p>更多内容详见官方文档</p>
+<p>文中的代码示例可以在 github 上找到 <a href="https://github.com/xchaoinfo/Py-example-by-xchaoinfo" target="_blank" rel="external">https://github.com/xchaoinfo/Py-example-by-xchaoinfo</a><br>本文同步发布在 知乎专栏: 可爱的 Python</p>
+<p>首发于微信公众号：xchaoinfo</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>咖啡一杯，深夜提神，白兔奶糖，童年回忆<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://7xti71.com1.z0.glb.clouddn.com/wechat_pay-nonlogo.png">
+                      <span class="reward-type">微信支付</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -189,27 +238,101 @@
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSV</a>
-        		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/16/05-- xlwings 让你的 Excel 飞起来/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/10/01/02-- Python 构建一个简单爬虫系统 二/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Python 构建一个简单爬虫系统 (二)
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/04/13/04-- Python3 读写 csv /" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python3 读写 csv</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-    
+
 
 
           </div>
@@ -232,8 +355,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

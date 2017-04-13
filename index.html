@@ -3,178 +3,830 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>xchaoinfo的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+  <meta name="description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xchaoinfo的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="xchaoinfo的博客">
+<meta property="og:description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="xchaoinfo的博客">
+<meta name="twitter:description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="xchaoinfo的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
   
+  <link rel="stylesheet" type="text/css" href="/./main.05aabf.css">
+  <style type="text/css">
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    #container.show {
+      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+    }
+  </style>
   
-  <link rel="stylesheet" href="/css/style.css">
+
   
 
 </head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+  <div id="container" q-class="show:isCtnShow">
+    <canvas id="anm-canvas" class="anm-canvas"></canvas>
+    <div class="left-col" q-class="show:isShow">
       
+<div class="overlay" style="background: #4d4d4d"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			<img src="https://pic2.zhimg.com/v2-402830d2d98d3632aa264c925944992d_xl.jpg" class="js-avatar">
+		</a>
+		<hgroup>
+		  <h1 class="header-author"><a href="/">xchaoinfo</a></h1>
+		</hgroup>
+		
+		<p class="header-subtitle">数学民工，Python爱好者</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/Python/">Python</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+    		
+    			
+    			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+    			
+            
+    			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/xchaoinfo" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="https://weibo.com/xchaoinfo" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="https://zhihu.com/people/xchaoinfo" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
+    <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
+      
+<nav id="mobile-nav">
+  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+	<div class="btnctn js-mobile-btnctn">
+  		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
+	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="https://pic2.zhimg.com/v2-402830d2d98d3632aa264c925944992d_xl.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author js-header-author">xchaoinfo</h1>
+			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>数学民工，Python爱好者<i class="icon icon-quo-right"></i></p>
+			
+			
+			
+				
+			
+				
+			
+			
+			
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/xchaoinfo" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="https://weibo.com/xchaoinfo" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="https://zhihu.com/people/xchaoinfo" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+				</div>
+			</nav>
+
+			<nav class="header-menu js-header-menu">
+				<ul style="width: 50%">
+				
+				
+					<li style="width: 50%"><a href="/">主页</a></li>
+		        
+					<li style="width: 50%"><a href="/tags/Python/">Python</a></li>
+		        
+				</ul>
+			</nav>
+		</header>				
+	</div>
+	<div class="mobile-mask" style="display:none" q-show="isShow"></div>
+</nav>
+
+      <div id="wrapper" class="body-wrap">
+        <div class="menu-l">
+          <div class="canvas-wrap">
+            <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
+          </div>
+          <div id="js-content" class="content-ll">
+            
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/04/07/hello-world/" class="article-date">
-  <time datetime="2017-04-07T13:33:10.478Z" itemprop="datePublished">2017-04-07</time>
-</a>
-    
-  </div>
+    <article id="post-04-- Python3 读写 csv " class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/07/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/04/13/04-- Python3 读写 csv /">Python3 读写 csv</a>
     </h1>
   
 
+        
+        <a href="/2017/04/13/04-- Python3 读写 csv /" class="archive-article-date">
+  	<time datetime="2017-04-13T14:46:42.461Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-13</time>
+</a>
+        
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="Python3-读写-csv"><a href="#Python3-读写-csv" class="headerlink" title="Python3 读写 csv"></a>Python3 读写 csv</h2><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>xchaoinfo 在用 Python 写爬虫的时候，百万以内的数据量，经常使用 csv 这种格式来存放数据。<br>优点：</p>
+<ol>
+<li>Python 内置模块读写方便</li>
+<li>纯文本格式并且保持一定的数据结构</li>
+<li>可以被 Excel 打开</li>
+</ol>
+<p>以下是 Python3 下读写 csv 实例<br>访问 <a href="https://github.com/xchaoinfo/Py-example-by-xchaoinfo" target="_blank" rel="external">https://github.com/xchaoinfo/Py-example-by-xchaoinfo</a><br>获取详细的代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python3</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line"># @Date    : 2017-02-26 22:59:55</div><div class="line"># @Author  : xchaoinfo (xchaoinfo)</div><div class="line"># @github  : https://github.com/xchaoinfo</div><div class="line"></div><div class="line">import csv</div><div class="line">&quot;&quot;&quot;</div><div class="line">data1.csv 的内容是</div><div class="line"></div><div class="line">张三,北京,25</div><div class="line">李四,上海,30</div><div class="line"></div><div class="line">data2.csv 的内容是</div><div class="line"></div><div class="line">姓名,城市,年龄</div><div class="line">张三,北京,25</div><div class="line">李四,上海,30</div><div class="line"></div><div class="line">&quot;&quot;&quot;</div><div class="line"></div><div class="line"></div><div class="line"># example 1 读取 csv 返回列表</div><div class="line">def read_csv(fn=&apos;data1.csv&apos;):</div><div class="line">    &quot;&quot;&quot;</div><div class="line">    data1.csv 中数据格式，</div><div class="line">    读取返回列表比较容易处理</div><div class="line"></div><div class="line">    &quot;&quot;&quot;</div><div class="line">    # 读取打印 - reader-example1</div><div class="line">    with open(fn, encoding=&quot;utf-8&quot;) as fr:</div><div class="line">        csvfr = csv.reader(fr)</div><div class="line">        for row in csvfr:</div><div class="line">            print(&quot;, &quot;.join(row))</div><div class="line"></div><div class="line">    # 读取后，返回列表 - reader-example</div><div class="line">    with open(fn, encoding=&quot;utf-8&quot;) as fr:</div><div class="line">        csvfr = csv.reader(fr)</div><div class="line">        rows = [row for row in csvfr]</div><div class="line">    return rows</div><div class="line"></div><div class="line"></div><div class="line"># example 2 读取 csv 返回列表</div><div class="line">def read_csv_dict(fn=&quot;data2.csv&quot;):</div><div class="line">    &quot;&quot;&quot;</div><div class="line">    data2.csv 的数据格式，</div><div class="line">    读取返回字典比较容易处理</div><div class="line"></div><div class="line">    &quot;&quot;&quot;</div><div class="line">    with open(fn, encoding=&quot;utf-8&quot;) as fr:</div><div class="line">        dict_rows = csv.DictReader(fr, fieldnames=None)</div><div class="line">        # 不指定 fieldnames 的情况下</div><div class="line">        # 默认第一行数据作为 fieldnames</div><div class="line">        for row in dict_rows:</div><div class="line">            print(row)  # row 是一个字典</div><div class="line"></div><div class="line"></div><div class="line"># example 3 list 或 tuple 写入到 csv</div><div class="line">def write_csv(fn=&quot;data1.csv&quot;):</div><div class="line">    with open(fn, &apos;w&apos;, newline=&quot;&quot;, encoding=&quot;utf-8&quot;) as fw:</div><div class="line">        fwcsv = csv.writer(fw)</div><div class="line">        one = (&quot;张三&quot;, &quot;北京&quot;, &quot;25&quot;)  # tuple</div><div class="line">        two = [&quot;李四&quot;, &quot;上海&quot;, &quot;30&quot;]  # list</div><div class="line">        fwcsv.writerow(one)</div><div class="line">        fwcsv.writerow(two)</div><div class="line"></div><div class="line"></div><div class="line"># example 4 dict 写入到 csv 中</div><div class="line">def write_dict_csv(fn=&quot;data2.csv&quot;):</div><div class="line">    dict1 = &#123;</div><div class="line">        &quot;姓名&quot;: &quot;张三&quot;,</div><div class="line">        &quot;城市&quot;: &quot;北京&quot;,</div><div class="line">        &quot;年龄&quot;: &quot;25&quot;</div><div class="line">    &#125;</div><div class="line">    dict2 = &#123;</div><div class="line">        &quot;姓名&quot;: &quot;李四&quot;,</div><div class="line">        &quot;城市&quot;: &quot;上海&quot;,</div><div class="line">        &quot;年龄&quot;: &quot;30&quot;</div><div class="line">    &#125;</div><div class="line">    fieldnames = [&quot;姓名&quot;, &quot;城市&quot;, &quot;年龄&quot;]</div><div class="line">    with open(fn, &apos;w&apos;, newline=&quot;&quot;, encoding=&quot;utf-8&quot;) as fwd:</div><div class="line">        fwdcsv = csv.DictWriter(fwd, fieldnames=fieldnames)</div><div class="line">        fwdcsv.writeheader()</div><div class="line">        fwdcsv.writerow(dict1)</div><div class="line">        fwdcsv.writerow(dict2)</div><div class="line"></div><div class="line"></div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    write_dict_csv()</div><div class="line">    write_csv()</div><div class="line">    read_csv()</div><div class="line">    read_csv_dict()</div></pre></td></tr></table></figure>
+
+      
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/04/07/hello-world/" data-id="cj17w2oj40000ikfwr4691yep" class="article-share-link">Share</a>
+    <div class="article-info article-info-index">
       
       
-    </footer>
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSV</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/04/13/04-- Python3 读写 csv /">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
-  
 </article>
 
 
-  
 
-</section>
+
+
+
+
+
+  
+    <article id="post-05-- xlwings 让你的 Excel 飞起来" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
         
-          <aside id="sidebar">
   
-    
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/16/05-- xlwings 让你的 Excel 飞起来/">xlwings 让你的 Excel 飞起来 </a>
+    </h1>
+  
 
-  
+        
+        <a href="/2017/03/16/05-- xlwings 让你的 Excel 飞起来/" class="archive-article-date">
+  	<time datetime="2017-03-16T08:39:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="xlwings-让你的-Excel-飞起来"><a href="#xlwings-让你的-Excel-飞起来" class="headerlink" title="xlwings 让你的 Excel 飞起来"></a>xlwings 让你的 Excel 飞起来</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>众所周知，VBA 可以很高效的操作 Excel，提高办公效率。在 Python 中，我们可以通过 pywin32 来调用 windows 系统的 API 来实现 VBA 的很多功能，但是写起来比较复杂。</p>
+<p>开始之前, 回忆一下使用 Excel 的场景。<br>我们会同时打开多个 Excel 文件, 多个 workbook, 每个 workbook 又可以用多个 sheet。<br>同时，我们还会在多个 sheet workbook Excel 窗口之间切换。<br>对一个或多个单元格进行增删改查，设置格式，合并分拆等操作。<br>利用 xlwings 这些操作都可以轻松搞定，一次编写彻底解决”手抽筋的问题” </p>
+<p>xlwings 是基于 BSD-licensed 的一个 Python 第三方的模块，对 pywin32 进行了封装，可以很方便的和 Excel 进行交互，它有以下优点：</p>
+<ol>
+<li>语法接近 VBA</li>
+<li>可以用 Python 代码取代 VBA 编写宏</li>
+<li>在 windows 可以用 Python 编写 Excel 用户自定义函数</li>
+<li>全功能支持 Numpy Pandas matplotlib 等科学计算库</li>
+<li>支持 Windows 和 MacOS</li>
+<li>支持 Py2.7 Py3.3+</li>
+</ol>
+<p>xlwings 可以让你的 Excel 飞起来，正如 Selenium 可以让你的浏览器飞起来一样。</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>推荐使用 Anaconda <a href="https://www.continuum.io/downloads" target="_blank" rel="external">https://www.continuum.io/downloads</a> 来安装，可以省去很多麻烦，<br><figure class="highlight plain"><figcaption><span>install xlwings```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">使用 pip 安装，需要先手动安装 pywin32 下载地址</div><div class="line">https://sourceforge.net/projects/pywin32/files/pywin32/ </div><div class="line"></div><div class="line">安装 pywin32 后，使用 pip 安装即可</div><div class="line"></div><div class="line">```pip install xlwings</div></pre></td></tr></table></figure></p>
+<p>官方安装文档<br><a href="http://docs.xlwings.org/en/stable/installation.html" target="_blank" rel="external">http://docs.xlwings.org/en/stable/installation.html</a></p>
+<h3 id="快速入门"><a href="#快速入门" class="headerlink" title="快速入门"></a>快速入门</h3><h4 id="打开工作表"><a href="#打开工作表" class="headerlink" title="打开工作表"></a>打开工作表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">import xlwings as xw</div><div class="line"># 打开一个新的 workbook </div><div class="line">wb = xw.Book()</div><div class="line"># 打开当前目录已经存在的一个 workbook </div><div class="line">wb = xw.Book(&apos;FileName.xlsx&apos;)</div><div class="line"></div><div class="line"># 输入完整的路径打开一个 workbook </div><div class="line">FileName = &quot;C:\\python\\to\\file.xlsx&quot;</div><div class="line">FileName = r&quot;C:\python\to\file.xlsx&quot;</div><div class="line"># 注意 windows 字符 &quot;\&quot; 逃逸的问题</div><div class="line">wb = xw.Book(fn)</div></pre></td></tr></table></figure>
+<h4 id="打开-sheet-的三种方式"><a href="#打开-sheet-的三种方式" class="headerlink" title="打开 sheet 的三种方式"></a>打开 sheet 的三种方式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"># 打开第一个 sheet</div><div class="line">sheet = wb.sheets[0]</div><div class="line"># 打开名字为 &quot;xchaoinfo&quot; sheet</div><div class="line">sheet = wb.sheets[&quot;xchaoinfo&quot;]</div><div class="line"># 打开当前活动的 sheet</div><div class="line">sheet = wb.sheets.active</div></pre></td></tr></table></figure>
+<h4 id="读写数据到-sheet-中"><a href="#读写数据到-sheet-中" class="headerlink" title="读写数据到 sheet 中"></a>读写数据到 sheet 中</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"># 当前活动的 sheet 中读写一个单元格的数据</div><div class="line">&gt;&gt;&gt; import xlwings as xw</div><div class="line">&gt;&gt;&gt; wb = xw.Book()</div><div class="line">&gt;&gt;&gt; sht = wb.sheets.active</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).value = &quot;xchaoinfo&quot;</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).value</div><div class="line">&apos;xchaoinfo&apos;</div><div class="line"># 当前活动的 sheet 中读写一行单元格的数据</div><div class="line"># 将列表储存在A1：C1中</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).value=[&quot;name&quot;,&quot;age&quot;,&quot;gender&quot;]</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1:C1&apos;).value</div><div class="line">[&apos;name&apos;, &apos;age&apos;, &apos;gender&apos;]</div><div class="line"># 当前活动的 sheet 中读写一列单元格的数据</div><div class="line"># 将列表储存在A1:A3中</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).options(transpose=True).value=[&quot;xchaoinfo&quot;,18,1]</div><div class="line">&gt;&gt;&gt; sht.range(&quot;A1:A3&quot;).value</div><div class="line">[&apos;xchaoinfo&apos;, 18.0, 1.0]</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1:A3&apos;).value = [&quot;Robot&quot;, 20, 2]</div><div class="line">&gt;&gt;&gt; sht.range(&quot;A1:A3&quot;).value</div><div class="line">[&apos;Robot&apos;, 18.0, 1.0]</div><div class="line"># 当前活动的 sheet 中读写多行多列单元格的数据</div><div class="line"># 将2x2表格，即二维数组，储存在A1:B2中，如第一行1，2，第二行3，4</div><div class="line">&gt;&gt;&gt; wb = xw.Book()</div><div class="line">&gt;&gt;&gt; sht = wb.sheets.active</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1&apos;).options(expand=&apos;table&apos;)=[[1,2],[3,4]]</div><div class="line">&gt;&gt;&gt; sht.range(&quot;A1&quot;).expand().value</div><div class="line">[[1.0, 2.0], [3.0, 4.0]]</div><div class="line"># expand 的详细用法请参考文档</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1:B2&apos;).value = [[1,2],[3,4]]</div><div class="line">&gt;&gt;&gt; sht.range(&apos;A1:B2&apos;).value</div><div class="line">[[1.0, 2.0], [3.0, 4.0]]</div></pre></td></tr></table></figure>
+<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><p>删除 Excel 文件中，满足条件的单元格所在的一整行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python3</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line"># @Date    : 2017-03-16 14:14:03</div><div class="line"># @Author  : xchaoinfo (xchaoinfo)</div><div class="line"># @github  : https://github.com/xchaoinfo</div><div class="line"></div><div class="line">import xlwings as xw</div><div class="line"></div><div class="line">fn = &quot;data.xlsx&quot;</div><div class="line"></div><div class="line"></div><div class="line">class DeleteTools(object):</div><div class="line">    &quot;&quot;&quot;删除满足某些条件的行</div><div class="line">    data.xlsx 中有很多重复的数据</div><div class="line">    需要删除那些重复的</div><div class="line">    &quot;&quot;&quot;</div><div class="line"></div><div class="line">    def __init__(self, fn):</div><div class="line">        super(DeleteTools, self).__init__()</div><div class="line">        self.ExistSet = set()</div><div class="line">        self.ToDelList = list()</div><div class="line">        self.fn = fn</div><div class="line"></div><div class="line">    def rule(self, value):</div><div class="line">        # 可以自定义规则来操作</div><div class="line">        pass</div><div class="line"></div><div class="line">    def Delete(self):</div><div class="line">        # visible 控制 Excel 打开是否显示界面</div><div class="line">        # add_book 控制是否添加新的 workbook</div><div class="line">        app = xw.App(visible=True, add_book=False)</div><div class="line">        # app.display_alerts = False</div><div class="line"></div><div class="line">        # 打开 data.xlsx 文件到 wookbook 中</div><div class="line">        wb = app.books.open(fn)</div><div class="line">        # 切换到当前活动的 sheet 中</div><div class="line">        sheet = wb.sheets.active</div><div class="line"></div><div class="line">        # 选择 A1 所在的一列</div><div class="line">        # 当 Excel 格式复杂的时候,不建议使用 expand</div><div class="line">        # 可以这样选择</div><div class="line">        ARange = sheet.range(&quot;A1:A100&quot;)</div><div class="line">        # ARange = sheet.range(&quot;A1&quot;).expand(&quot;down&quot;)</div><div class="line">        for A in ARange:</div><div class="line">            if str(A.value).strip() not in self.ExistSet:</div><div class="line">                self.ExistSet.add(str(A.value).strip())</div><div class="line">            else:</div><div class="line">                # address = A.address</div><div class="line">                # 获取 A 所在的位置坐标</div><div class="line">                self.ToDelList.append(A.address)</div><div class="line">                # print(A.value)</div><div class="line"></div><div class="line">        while self.ToDelList:</div><div class="line">            td = self.ToDelList.pop()</div><div class="line">            # 删除 A 所在的一行</div><div class="line">            sheet.range(td).api.EntireRow.Delete()</div><div class="line">        # 保存 wookbook</div><div class="line">        # 相当于Excel 的 Ctrl+S 快捷键</div><div class="line">        sheet.autofit()</div><div class="line">        wb.save()</div><div class="line">        app.quit()</div><div class="line"></div><div class="line"></div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    d = DeleteTools(fn)</div><div class="line">    d.Delete()</div></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>插上翅膀，让Excel飞起来——xlwings（一）<br><a href="http://www.jianshu.com/p/e21894fc5501" target="_blank" rel="external">http://www.jianshu.com/p/e21894fc5501</a><br>xlwings 官方文档<br><a href="http://docs.xlwings.org/en/stable/" target="_blank" rel="external">http://docs.xlwings.org/en/stable/</a></p>
+<p>更多内容详见官方文档</p>
+<p>文中的代码示例可以在 github 上找到 <a href="https://github.com/xchaoinfo/Py-example-by-xchaoinfo" target="_blank" rel="external">https://github.com/xchaoinfo/Py-example-by-xchaoinfo</a><br>本文同步发布在 知乎专栏: 可爱的 Python</p>
+<p>首发于微信公众号：xchaoinfo</p>
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li></ul>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/03/16/05-- xlwings 让你的 Excel 飞起来/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
     </div>
   </div>
+</article>
+
+
+
+
+
+
 
 
   
+    <article id="post-02-- Python 构建一个简单爬虫系统 二" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+      <header class="article-header">
         
-          <li>
-            <a href="/2017/04/07/hello-world/">Hello World</a>
-          </li>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/01/02-- Python 构建一个简单爬虫系统 二/">Python 构建一个简单爬虫系统 (二)</a>
+    </h1>
+  
+
         
-      </ul>
+        <a href="/2016/10/01/02-- Python 构建一个简单爬虫系统 二/" class="archive-article-date">
+  	<time datetime="2016-10-01T13:43:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Python-构建一个简单爬虫系统-二"><a href="#Python-构建一个简单爬虫系统-二" class="headerlink" title="Python 构建一个简单爬虫系统 (二)"></a>Python 构建一个简单爬虫系统 (二)</h1><p>本文是用 Python 构建一个简单爬虫系统的第二篇，上一篇介绍了通过 requests 和 Beautifulsoup 来做一个网页的抓取和解析。本篇介绍通过 queue 和 threading 模块，使用队列和多线程来进行大规模数据的抓取。</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>0x00·<a href="#0x00 背景简介">背景简介</a></li>
+<li>0x01·<a href="#0x01 queue、threading 基础">queue、threading 基础</a></li>
+<li>0x02·<a href="#0x02 多线程爬虫实例">多线程爬虫实例</a></li>
+</ul>
+<h2 id="背景简介"><a href="#背景简介" class="headerlink" title="背景简介"></a>背景简介</h2><p>Q1: 据说由于 GIL(全局锁) 的存在，Python 多线程很鸡肋，多线程 Python 爬虫能提高速度吗？</p>
+<p>A1: 要很好的回答这个问题，首先要搞清楚两个概念：进程与线程，I/O 密集型与计算密集型任务。</p>
+<h4 id="进程与线程"><a href="#进程与线程" class="headerlink" title="进程与线程"></a>进程与线程</h4><p>操作系统的设计，可以归结为三点：</p>
+<ol>
+<li>以多进程形式，允许多个任务同时运行；</li>
+<li>以多线程形式，允许单个任务分成不同的部分运行；</li>
+<li>提供协调机制，一方面防止进程之间和线程之间产生冲突，另一方面允许进程之间和线程之间共享资源。</li>
+</ol>
+<h4 id="I-O-密集型与计算密集型任务"><a href="#I-O-密集型与计算密集型任务" class="headerlink" title="I/O 密集型与计算密集型任务"></a>I/O 密集型与计算密集型任务</h4><p>简单的来说是频繁的进行 CPU 的计算，还是文件的读写操作。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>对于计算密集型的任务，由于 GIL 的存在使用多进程，能提高计算效率<br>对于I/O 密集型的任务，例如网络爬虫，大多数时间都是等待从网上下载文件写入到本地，使用多线程能显著提高爬虫的爬取速度。</p>
+<h2 id="queue、threading-基础"><a href="#queue、threading-基础" class="headerlink" title="queue、threading 基础"></a>queue、threading 基础</h2><h3 id="queue"><a href="#queue" class="headerlink" title="queue"></a>queue</h3><p>queue 模块提供了一个适用于多线程编程的数据结构，可以用来在线程间安全地传递消息或者其他数据，它会为提供者处理锁定，使多个线程可以安全地处理同一个 queue 实例。</p>
+<p>下面介绍一些简单的用法，更复杂的用法参考 queue 的文档</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment"># 创建一个 queue 实例</span></div><div class="line">q = queue.Queue()</div><div class="line"></div><div class="line"><span class="comment"># 向 queue 添加一个元素</span></div><div class="line">item = <span class="string">"xchaoinfo"</span></div><div class="line">q.put(item)</div><div class="line"></div><div class="line"><span class="comment"># 从 queue 取得一个元素</span></div><div class="line">data = q.get()</div><div class="line"></div><div class="line"><span class="comment"># 获取 queue 的元素的个数</span></div><div class="line">q.qsize()</div><div class="line"></div><div class="line"><span class="comment"># 判断 queue 是否为空</span></div><div class="line">q.empty()</div></pre></td></tr></table></figure>
+<h3 id="threading"><a href="#threading" class="headerlink" title="threading"></a>threading</h3><p>threading 在 _thread 模块的基础的提供多线程处理的更高级别的接口。</p>
+<p>下面介绍一些 threading 的简单用法</p>
+<p>不带参数的线程创建<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> threading</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_work</span><span class="params">()</span>:</span></div><div class="line">    print(<span class="string">"start working"</span>)</div><div class="line"></div><div class="line">t = threading.Thread(target=do_work)</div><div class="line">t.start()</div></pre></td></tr></table></figure></p>
+<p>带参数的线程创建<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> threading</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_work</span><span class="params">(num)</span>:</span></div><div class="line">    print(<span class="string">"start working of %s"</span> % num)</div><div class="line"></div><div class="line"><span class="comment"># args 是 tuple 类型的参数，</span></div><div class="line">t = threading.Thread(target=do_work, args=(<span class="number">1</span>,))</div><div class="line">t.start()</div></pre></td></tr></table></figure></p>
+<p>其实，更常用的方法是继承 threading.Thread 类，然后重写 run 方法</p>
+<h2 id="多线程爬虫实例"><a href="#多线程爬虫实例" class="headerlink" title="多线程爬虫实例"></a>多线程爬虫实例</h2><p>假设我们已经把要爬取的 url 存放到 url.txt 文件里，并且每行存放一个 url, 每个 url 都是一张图片的地址，我们要把所有图片下载到本地，把 url 的后面部分来作为图片的文件名<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> requests</div><div class="line"><span class="keyword">import</span> threading</div><div class="line"><span class="keyword">import</span> queue</div><div class="line"><span class="keyword">import</span> os</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># 从 txt 文件中获取 url, 并且处理下载后的文件名</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_url_fn_from_txt</span><span class="params">()</span>:</span></div><div class="line">    path = <span class="string">"img/"</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(path):</div><div class="line">        os.mkdir(path)</div><div class="line">    <span class="keyword">with</span> open(<span class="string">"url.txt"</span>) <span class="keyword">as</span> fr:</div><div class="line">        url_list = [f.strip() <span class="keyword">for</span> f <span class="keyword">in</span> fr <span class="keyword">if</span> f.strip()]</div><div class="line"></div><div class="line">    url_fn_list = [tuple(u, path + u.split(<span class="string">"/"</span>)[<span class="number">-1</span>]) <span class="keyword">for</span> u <span class="keyword">in</span> url_list]</div><div class="line"></div><div class="line">    <span class="keyword">return</span> url_fn_list</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># 下载 img 的函数，下载成功返回 1 否则返回 0</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">download_img</span><span class="params">(url, fn)</span>:</span></div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        <span class="keyword">if</span> os.path.exists(fn):</div><div class="line">            <span class="keyword">return</span> <span class="number">1</span></div><div class="line">        img = requests.get(url, timeout=<span class="number">3</span>)</div><div class="line">        <span class="keyword">with</span> open(fn, <span class="string">'wb'</span>) <span class="keyword">as</span> fw:</div><div class="line">            fw.write(img.content)</div><div class="line">            fw.close()</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span></div><div class="line">    <span class="keyword">except</span>:</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">DownloadThread</span><span class="params">(threading.Thread)</span>:</span></div><div class="line">    <span class="string">"""重写 run 函数"""</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, que)</span>:</span></div><div class="line">        self.que = que</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="keyword">while</span> <span class="keyword">not</span> self.que.empty():</div><div class="line">            url, fn = self.que.get()</div><div class="line">            <span class="comment"># for u in uid:</span></div><div class="line">            <span class="keyword">if</span> download_img(url, fn):</div><div class="line">                <span class="keyword">pass</span></div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                self.que.put(tuple(url, fn))</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></div><div class="line">    url_fn_list = get_url_fn_from_txt()</div><div class="line">    que = queue.Queue()</div><div class="line">    <span class="keyword">for</span> url_fn <span class="keyword">in</span> url_fn_list:</div><div class="line">        que.put(url_fn)</div><div class="line"></div><div class="line">    thread_num = <span class="number">20</span>  <span class="comment"># 线程数</span></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(thread_num):</div><div class="line">        download = DownloadThread(que)</div><div class="line">        download.start()</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    main()</div></pre></td></tr></table></figure></p>
+<p>这是比较简陋的一个实例，可以在此基础上加入更多功能。如有错误，烦请指出，不胜感激。</p>
+<p>参考：</p>
+<ol>
+<li><a href="http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html</a> (进程与线程)</li>
+<li><a href="http://blog.chinaunix.net/uid-116213-id-3086203.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-116213-id-3086203.html</a> (I/O 密集型与计算密集型任务)</li>
+<li>queue 和 threading 的用法参考 Python 的文档</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/10/01/02-- Python 构建一个简单爬虫系统 二/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
     </div>
   </div>
+</article>
+
+
+
+
+
+
+
 
   
-</aside>
+    <article id="post-01-- Python 构建一个简单爬虫系统 一" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
         
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/30/01-- Python 构建一个简单爬虫系统 一/">Python 构建一个简单爬虫系统 (一)</a>
+    </h1>
+  
+
+        
+        <a href="/2016/09/30/01-- Python 构建一个简单爬虫系统 一/" class="archive-article-date">
+  	<time datetime="2016-09-30T09:37:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-09-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Python-构建一个简单爬虫系统-一"><a href="#Python-构建一个简单爬虫系统-一" class="headerlink" title="Python 构建一个简单爬虫系统 (一)"></a>Python 构建一个简单爬虫系统 (一)</h1><p>本文通过 requests beautifulsoup re 等 Python的模块, 尝试构建一个微型的爬虫系统，本文采用 Python 3 的版本, 本文是第一篇介绍一个网页的简单抓取和解析</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>0x00·<a href="#0x00 简介">简介</a></li>
+<li>0x01·<a href="#0x01 简单抓取">简单抓取</a></li>
+<li>0x02·<a href="#0x02 解析网页">解析网页</a></li>
+</ul>
+<h2 id="0x00-简介"><a href="#0x00-简介" class="headerlink" title="0x00 简介"></a>0x00 简介</h2><ol>
+<li>requests 作为优秀的 Python 第三方的模块，当邂逅了之后，你就会向 urllib say goodbye 了, 本文会介绍一些 requests 的具体的使用方法。</li>
+<li><p>beautifulsoup 作为常用的解析网页的第三方的模块，通过 “lxml” 作为解析器，可以达到速度和兼容性的平衡.<br>当然 xpath 也是一个很好的选择。re 还是无处不在的显示其强大的生命力。</p>
+</li>
+<li><p>在了解 requests Beautifulsoup4 的用法的基础上，一步步教你怎么构建一个简单的小型爬虫系统，</p>
+</li>
+</ol>
+<p>本文是对 requests Beautifulsoup4 的一个简单的综合应用，关于这两 Python 优秀的第三方模块的使用方法，可以看本文最后我给的参考文档</p>
+<h2 id="0x01-简单抓取"><a href="#0x01-简单抓取" class="headerlink" title="0x01 简单抓取"></a>0x01 简单抓取</h2><p>抓取一个网页并且把内容保存到本地</p>
+<pre><code>import requests
+def get_html(url):
+    html = requests.get(url)
+    with open(&apos;content.html&apos;, &apos;wb&apos;) as fw:
+        fw.write(html.content)
+        fw.close()
+if __name__ == &apos;__main__&apos;:
+    url = &quot;http://example.com&quot;
+    get_data(url)
+</code></pre><p>可是你会发现，大多数情况，这个代码是没法工作的，网站会对 request header 做一些限制，</p>
+<pre><code>def get_html(url):
+    headers = {
+        &apos;User-Agent&apos;: &quot;Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36&quot;
+    }
+    html = requests.get(url, headers=headers)
+    with open(&apos;content.html&apos;, &apos;wb&apos;) as fw:
+        fw.write(html.content)
+        fw.close()
+
+if __name__ == &apos;__main__&apos;:
+    url = &quot;http://example.com&quot;
+    get_html(url)
+</code></pre><p>主要是后面的方法，我们假装好像浏览器的样子，<br>还有些网站需要检测 Request headers 里面的 Refer host 等字段，我们会在后面讲到<br>但是 0x01-1 的代码，还是不够健壮，因为，我们不知道请求是否成功了，如果最后保存到本地的，是一堆 404 的页面，显然是一件很让人沮丧的事情，我们在把代码改下，加上一个请求是否成功的代码。</p>
+<blockquote>
+<p>http 请求状态有很多种，大多数情况下 200 是我们理想中的状态，</p>
+</blockquote>
+<pre><code>def get_data(url):
+    headers = {
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36&quot;
+    }
+    html = requests.get(url, headers=headers)
+    if html.status_code == 200:
+        print(url, &apos;@ok200&apos;, str(time.ctime()))
+        with open(&apos;content.html&apos;, &apos;wb&apos;) as fw:
+            fw.write(html.content)
+            fw.close()
+    else:
+        print(url, &apos;wrong&apos;, str(time.ctime()))
+
+if __name__ == &apos;__main__&apos;:
+    url = &quot;http://example.com&quot;
+    get_data(url)
+</code></pre><p>我们用 requests 的一个 status_code 方法来判断是否访问成功，然后使用 print 一下，相当于打印日志了，当我们做大规模抓取的时候，print 显然不是一个很好的选择，Python 的 logging 模块能够更好的胜任这项工作，为了方便起见，我们暂时使用简单直接粗暴的 print 来做代替 logging 的工作</p>
+<p>由于网络原因，可能会出现访问超时的问题，为了让代码更健壮，我们可以设置 timeout, 同时，如果确定网页不需要重定向， 可以设置 allow_redirects=False</p>
+<pre><code>def get_data(url):
+    headers = {
+        &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36&quot;
+    }
+    try:
+        html = requests.get(url, headers=headers, allow_redirects=Fasle, timeout=3)
+        if html.status_code == 200:
+            print(url, &apos;@ok200&apos;, str(time.ctime()))
+            with open(&apos;content.html&apos;, &apos;wb&apos;) as fw:
+                fw.write(html.content)
+                fw.close()
+        else:
+            print(url, &apos;wrong&apos;, str(time.ctime()))
+    except Exception as e:
+        print(url, e, str(time.ctime()))
+
+if __name__ == &apos;__main__&apos;:
+    url = &quot;http://example.com&quot;
+    get_data(url)
+</code></pre><p>至此，我们完成了一个网页的抓取，并且做了相关的异常处理。</p>
+<h2 id="0x02-解析网页"><a href="#0x02-解析网页" class="headerlink" title="0x02 解析网页"></a>0x02 解析网页</h2><p>本节说明下，通过 re 和 beautifulsoup 的组合来解析网页</p>
+<p>####1. re (正则表达式) 提取网页<br>经常用的是贪婪匹配和非贪婪匹配，还有就是单行匹配还是全文匹配<br>最常用的方法是 re.findall 还有括号的使用<br>例如</p>
+<pre><code>import re
+text = &quot;&quot;&quot;Sxchaoinfo@EgithubE
+    xchaoinfo@wechat
+    xchaoinfo@zhihuE&quot;&quot;&quot;
+</code></pre><ul>
+<li>模式一</li>
+</ul>
+<pre><code># 加上 re.S 代表是全文匹配
+pa = r&apos;S.*?E&apos;
+re.findall(pa, text) -&gt; 返回的是[&quot;Sxchaoinfo@E&quot;,]
+re.findall(pa, text, re.S) -&gt; 返回的是[&quot;Sxchaoinfo@E&quot;,]
+</code></pre><ul>
+<li>模式二</li>
+</ul>
+<pre><code>pa = r&apos;S.*E&apos;
+re.findall(pa, text) -&gt; 返回的是[&apos;Sxchaoinfo@EgithubE&apos;, ]
+
+re.findall(pa, text, re.S) -&gt; 返回的是
+[&apos;Sxchaoinfo@EgithubE\n    xchaoinfo@wechat\n    xchaoinfo@zhihuE&apos;, ]
+</code></pre><ul>
+<li>模式三</li>
+</ul>
+<pre><code>pa = r&apos;S(.*?)E&apos;
+re.findall(pa, text) -&gt; 返回的是[&apos;xchaoinfo@&apos;,]
+</code></pre><p>更佳详细的 re(正则表达式) 的使用方法，请参考文档获取其他网站的教程</p>
+<p>####2. beautifulsoup 提取网页</p>
+<p>Beautifulsoup 解析网页的时候推荐使用 lxml作为解析器，虽然 lxml 的安装可能会花费您一点时间，其他解析器的选择，可以参考官方的文档<br>最常用的方法是</p>
+<pre><code>from bs4 import BeautifulSoup
+
+# 获取页面所有的 url 链接
+soup = BeautifulSoup(html_content, &apos;lxml&apos;)
+ahref = soup.findAll(&apos;a&apos;)
+for a in ahref:
+    print(a[&apos;href&apos;])
+</code></pre><h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul>
+<li><a href="http://www.python-requests.org/en/master/" target="_blank" rel="external">Requests: HTTP for Humans</a></li>
+<li><a href="http://cn.python-requests.org/zh_CN/latest/" target="_blank" rel="external">requests 中文文档</a></li>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank" rel="external">BeautifulSoup Documentation</a></li>
+<li><a href="http://beautifulsoup.readthedocs.io/zh_CN/latest/" target="_blank" rel="external">BeautifulSoup 中文文档</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/09/30/01-- Python 构建一个简单爬虫系统 一/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+  
+
+
+          </div>
+        </div>
       </div>
       <footer id="footer">
-  
   <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2017 xchaoinfo
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
     </div>
   </div>
 </footer>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true,
+		showTags: false
+	}
+</script>
+
+<script>!function(t){function n(r){if(e[r])return e[r].exports;var o=e[r]={exports:{},id:r,loaded:!1};return t[r].call(o.exports,o,o.exports,n),o.loaded=!0,o.exports}var e={};return n.m=t,n.c=e,n.p="./",n(0)}([function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}function o(t,n){var e=/\/|index.html/g;return t.replace(e,"")===n.replace(e,"")}function i(){for(var t=document.querySelectorAll(".js-header-menu li a"),n=window.location.pathname,e=0,r=t.length;e<r;e++){var i=t[e];o(n,i.getAttribute("href"))&&(0,d.default)(i,"active")}}function u(t){for(var n=t.offsetLeft,e=t.offsetParent;null!==e;)n+=e.offsetLeft,e=e.offsetParent;return n}function f(t){for(var n=t.offsetTop,e=t.offsetParent;null!==e;)n+=e.offsetTop,e=e.offsetParent;return n}function c(t,n,e,r,o){var i=u(t),c=f(t)-n;if(c-e<=o){var a=t.$newDom;a||(a=t.cloneNode(!0),(0,h.default)(t,a),t.$newDom=a,a.style.position="fixed",a.style.top=(e||c)+"px",a.style.left=i+"px",a.style.zIndex=r||2,a.style.width="100%",a.style.color="#fff"),a.style.visibility="visible",t.style.visibility="hidden"}else{t.style.visibility="visible";var s=t.$newDom;s&&(s.style.visibility="hidden")}}function a(){var t=document.querySelector(".js-overlay"),n=document.querySelector(".js-header-menu");c(t,document.body.scrollTop,-63,2,0),c(n,document.body.scrollTop,1,3,0)}function s(){document.querySelector("#container").addEventListener("scroll",function(t){a()}),window.addEventListener("scroll",function(t){a()}),a()}function l(){x.default.versions.mobile&&window.screen.width<800&&(i(),s())}var p=e(71),d=r(p),v=e(72),y=(r(v),e(84)),h=r(y),b=e(69),x=r(b),g=e(75),m=r(g),w=e(70);l(),(0,w.addLoadEvent)(function(){m.default.init()}),t.exports={}},function(t,n){var e=t.exports="undefined"!=typeof window&&window.Math==Math?window:"undefined"!=typeof self&&self.Math==Math?self:Function("return this")();"number"==typeof __g&&(__g=e)},function(t,n){var e={}.hasOwnProperty;t.exports=function(t,n){return e.call(t,n)}},function(t,n,e){var r=e(49),o=e(15);t.exports=function(t){return r(o(t))}},function(t,n,e){t.exports=!e(8)(function(){return 7!=Object.defineProperty({},"a",{get:function(){return 7}}).a})},function(t,n,e){var r=e(6),o=e(12);t.exports=e(4)?function(t,n,e){return r.f(t,n,o(1,e))}:function(t,n,e){return t[n]=e,t}},function(t,n,e){var r=e(10),o=e(30),i=e(24),u=Object.defineProperty;n.f=e(4)?Object.defineProperty:function(t,n,e){if(r(t),n=i(n,!0),r(e),o)try{return u(t,n,e)}catch(t){}if("get"in e||"set"in e)throw TypeError("Accessors not supported!");return"value"in e&&(t[n]=e.value),t}},function(t,n,e){var r=e(22)("wks"),o=e(13),i=e(1).Symbol,u="function"==typeof i,f=t.exports=function(t){return r[t]||(r[t]=u&&i[t]||(u?i:o)("Symbol."+t))};f.store=r},function(t,n){t.exports=function(t){try{return!!t()}catch(t){return!0}}},function(t,n,e){var r=e(35),o=e(16);t.exports=Object.keys||function(t){return r(t,o)}},function(t,n,e){var r=e(11);t.exports=function(t){if(!r(t))throw TypeError(t+" is not an object!");return t}},function(t,n){t.exports=function(t){return"object"==typeof t?null!==t:"function"==typeof t}},function(t,n){t.exports=function(t,n){return{enumerable:!(1&t),configurable:!(2&t),writable:!(4&t),value:n}}},function(t,n){var e=0,r=Math.random();t.exports=function(t){return"Symbol(".concat(void 0===t?"":t,")_",(++e+r).toString(36))}},function(t,n){var e=t.exports={version:"2.4.0"};"number"==typeof __e&&(__e=e)},function(t,n){t.exports=function(t){if(void 0==t)throw TypeError("Can't call method on  "+t);return t}},function(t,n){t.exports="constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf".split(",")},function(t,n){t.exports={}},function(t,n){t.exports=!0},function(t,n){n.f={}.propertyIsEnumerable},function(t,n,e){var r=e(6).f,o=e(2),i=e(7)("toStringTag");t.exports=function(t,n,e){t&&!o(t=e?t:t.prototype,i)&&r(t,i,{configurable:!0,value:n})}},function(t,n,e){var r=e(22)("keys"),o=e(13);t.exports=function(t){return r[t]||(r[t]=o(t))}},function(t,n,e){var r=e(1),o="__core-js_shared__",i=r[o]||(r[o]={});t.exports=function(t){return i[t]||(i[t]={})}},function(t,n){var e=Math.ceil,r=Math.floor;t.exports=function(t){return isNaN(t=+t)?0:(t>0?r:e)(t)}},function(t,n,e){var r=e(11);t.exports=function(t,n){if(!r(t))return t;var e,o;if(n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;if("function"==typeof(e=t.valueOf)&&!r(o=e.call(t)))return o;if(!n&&"function"==typeof(e=t.toString)&&!r(o=e.call(t)))return o;throw TypeError("Can't convert object to primitive value")}},function(t,n,e){var r=e(1),o=e(14),i=e(18),u=e(26),f=e(6).f;t.exports=function(t){var n=o.Symbol||(o.Symbol=i?{}:r.Symbol||{});"_"==t.charAt(0)||t in n||f(n,t,{value:u.f(t)})}},function(t,n,e){n.f=e(7)},function(t,n,e){var r=e(1),o=e(14),i=e(46),u=e(5),f="prototype",c=function(t,n,e){var a,s,l,p=t&c.F,d=t&c.G,v=t&c.S,y=t&c.P,h=t&c.B,b=t&c.W,x=d?o:o[n]||(o[n]={}),g=x[f],m=d?r:v?r[n]:(r[n]||{})[f];d&&(e=n);for(a in e)s=!p&&m&&void 0!==m[a],s&&a in x||(l=s?m[a]:e[a],x[a]=d&&"function"!=typeof m[a]?e[a]:h&&s?i(l,r):b&&m[a]==l?function(t){var n=function(n,e,r){if(this instanceof t){switch(arguments.length){case 0:return new t;case 1:return new t(n);case 2:return new t(n,e)}return new t(n,e,r)}return t.apply(this,arguments)};return n[f]=t[f],n}(l):y&&"function"==typeof l?i(Function.call,l):l,y&&((x.virtual||(x.virtual={}))[a]=l,t&c.R&&g&&!g[a]&&u(g,a,l)))};c.F=1,c.G=2,c.S=4,c.P=8,c.B=16,c.W=32,c.U=64,c.R=128,t.exports=c},function(t,n){var e={}.toString;t.exports=function(t){return e.call(t).slice(8,-1)}},function(t,n,e){var r=e(11),o=e(1).document,i=r(o)&&r(o.createElement);t.exports=function(t){return i?o.createElement(t):{}}},function(t,n,e){t.exports=!e(4)&&!e(8)(function(){return 7!=Object.defineProperty(e(29)("div"),"a",{get:function(){return 7}}).a})},function(t,n,e){"use strict";var r=e(18),o=e(27),i=e(36),u=e(5),f=e(2),c=e(17),a=e(51),s=e(20),l=e(58),p=e(7)("iterator"),d=!([].keys&&"next"in[].keys()),v="@@iterator",y="keys",h="values",b=function(){return this};t.exports=function(t,n,e,x,g,m,w){a(e,n,x);var O,S,_,j=function(t){if(!d&&t in A)return A[t];switch(t){case y:return function(){return new e(this,t)};case h:return function(){return new e(this,t)}}return function(){return new e(this,t)}},P=n+" Iterator",E=g==h,M=!1,A=t.prototype,T=A[p]||A[v]||g&&A[g],L=T||j(g),N=g?E?j("entries"):L:void 0,C="Array"==n?A.entries||T:T;if(C&&(_=l(C.call(new t)),_!==Object.prototype&&(s(_,P,!0),r||f(_,p)||u(_,p,b))),E&&T&&T.name!==h&&(M=!0,L=function(){return T.call(this)}),r&&!w||!d&&!M&&A[p]||u(A,p,L),c[n]=L,c[P]=b,g)if(O={values:E?L:j(h),keys:m?L:j(y),entries:N},w)for(S in O)S in A||i(A,S,O[S]);else o(o.P+o.F*(d||M),n,O);return O}},function(t,n,e){var r=e(10),o=e(55),i=e(16),u=e(21)("IE_PROTO"),f=function(){},c="prototype",a=function(){var t,n=e(29)("iframe"),r=i.length,o="<",u=">";for(n.style.display="none",e(48).appendChild(n),n.src="javascript:",t=n.contentWindow.document,t.open(),t.write(o+"script"+u+"document.F=Object"+o+"/script"+u),t.close(),a=t.F;r--;)delete a[c][i[r]];return a()};t.exports=Object.create||function(t,n){var e;return null!==t?(f[c]=r(t),e=new f,f[c]=null,e[u]=t):e=a(),void 0===n?e:o(e,n)}},function(t,n,e){var r=e(35),o=e(16).concat("length","prototype");n.f=Object.getOwnPropertyNames||function(t){return r(t,o)}},function(t,n){n.f=Object.getOwnPropertySymbols},function(t,n,e){var r=e(2),o=e(3),i=e(45)(!1),u=e(21)("IE_PROTO");t.exports=function(t,n){var e,f=o(t),c=0,a=[];for(e in f)e!=u&&r(f,e)&&a.push(e);for(;n.length>c;)r(f,e=n[c++])&&(~i(a,e)||a.push(e));return a}},function(t,n,e){t.exports=e(5)},function(t,n,e){var r=e(15);t.exports=function(t){return Object(r(t))}},function(t,n,e){t.exports={default:e(41),__esModule:!0}},function(t,n,e){t.exports={default:e(42),__esModule:!0}},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}n.__esModule=!0;var o=e(39),i=r(o),u=e(38),f=r(u),c="function"==typeof f.default&&"symbol"==typeof i.default?function(t){return typeof t}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":typeof t};n.default="function"==typeof f.default&&"symbol"===c(i.default)?function(t){return"undefined"==typeof t?"undefined":c(t)}:function(t){return t&&"function"==typeof f.default&&t.constructor===f.default&&t!==f.default.prototype?"symbol":"undefined"==typeof t?"undefined":c(t)}},function(t,n,e){e(65),e(63),e(66),e(67),t.exports=e(14).Symbol},function(t,n,e){e(64),e(68),t.exports=e(26).f("iterator")},function(t,n){t.exports=function(t){if("function"!=typeof t)throw TypeError(t+" is not a function!");return t}},function(t,n){t.exports=function(){}},function(t,n,e){var r=e(3),o=e(61),i=e(60);t.exports=function(t){return function(n,e,u){var f,c=r(n),a=o(c.length),s=i(u,a);if(t&&e!=e){for(;a>s;)if(f=c[s++],f!=f)return!0}else for(;a>s;s++)if((t||s in c)&&c[s]===e)return t||s||0;return!t&&-1}}},function(t,n,e){var r=e(43);t.exports=function(t,n,e){if(r(t),void 0===n)return t;switch(e){case 1:return function(e){return t.call(n,e)};case 2:return function(e,r){return t.call(n,e,r)};case 3:return function(e,r,o){return t.call(n,e,r,o)}}return function(){return t.apply(n,arguments)}}},function(t,n,e){var r=e(9),o=e(34),i=e(19);t.exports=function(t){var n=r(t),e=o.f;if(e)for(var u,f=e(t),c=i.f,a=0;f.length>a;)c.call(t,u=f[a++])&&n.push(u);return n}},function(t,n,e){t.exports=e(1).document&&document.documentElement},function(t,n,e){var r=e(28);t.exports=Object("z").propertyIsEnumerable(0)?Object:function(t){return"String"==r(t)?t.split(""):Object(t)}},function(t,n,e){var r=e(28);t.exports=Array.isArray||function(t){return"Array"==r(t)}},function(t,n,e){"use strict";var r=e(32),o=e(12),i=e(20),u={};e(5)(u,e(7)("iterator"),function(){return this}),t.exports=function(t,n,e){t.prototype=r(u,{next:o(1,e)}),i(t,n+" Iterator")}},function(t,n){t.exports=function(t,n){return{value:n,done:!!t}}},function(t,n,e){var r=e(9),o=e(3);t.exports=function(t,n){for(var e,i=o(t),u=r(i),f=u.length,c=0;f>c;)if(i[e=u[c++]]===n)return e}},function(t,n,e){var r=e(13)("meta"),o=e(11),i=e(2),u=e(6).f,f=0,c=Object.isExtensible||function(){return!0},a=!e(8)(function(){return c(Object.preventExtensions({}))}),s=function(t){u(t,r,{value:{i:"O"+ ++f,w:{}}})},l=function(t,n){if(!o(t))return"symbol"==typeof t?t:("string"==typeof t?"S":"P")+t;if(!i(t,r)){if(!c(t))return"F";if(!n)return"E";s(t)}return t[r].i},p=function(t,n){if(!i(t,r)){if(!c(t))return!0;if(!n)return!1;s(t)}return t[r].w},d=function(t){return a&&v.NEED&&c(t)&&!i(t,r)&&s(t),t},v=t.exports={KEY:r,NEED:!1,fastKey:l,getWeak:p,onFreeze:d}},function(t,n,e){var r=e(6),o=e(10),i=e(9);t.exports=e(4)?Object.defineProperties:function(t,n){o(t);for(var e,u=i(n),f=u.length,c=0;f>c;)r.f(t,e=u[c++],n[e]);return t}},function(t,n,e){var r=e(19),o=e(12),i=e(3),u=e(24),f=e(2),c=e(30),a=Object.getOwnPropertyDescriptor;n.f=e(4)?a:function(t,n){if(t=i(t),n=u(n,!0),c)try{return a(t,n)}catch(t){}if(f(t,n))return o(!r.f.call(t,n),t[n])}},function(t,n,e){var r=e(3),o=e(33).f,i={}.toString,u="object"==typeof window&&window&&Object.getOwnPropertyNames?Object.getOwnPropertyNames(window):[],f=function(t){try{return o(t)}catch(t){return u.slice()}};t.exports.f=function(t){return u&&"[object Window]"==i.call(t)?f(t):o(r(t))}},function(t,n,e){var r=e(2),o=e(37),i=e(21)("IE_PROTO"),u=Object.prototype;t.exports=Object.getPrototypeOf||function(t){return t=o(t),r(t,i)?t[i]:"function"==typeof t.constructor&&t instanceof t.constructor?t.constructor.prototype:t instanceof Object?u:null}},function(t,n,e){var r=e(23),o=e(15);t.exports=function(t){return function(n,e){var i,u,f=String(o(n)),c=r(e),a=f.length;return c<0||c>=a?t?"":void 0:(i=f.charCodeAt(c),i<55296||i>56319||c+1===a||(u=f.charCodeAt(c+1))<56320||u>57343?t?f.charAt(c):i:t?f.slice(c,c+2):(i-55296<<10)+(u-56320)+65536)}}},function(t,n,e){var r=e(23),o=Math.max,i=Math.min;t.exports=function(t,n){return t=r(t),t<0?o(t+n,0):i(t,n)}},function(t,n,e){var r=e(23),o=Math.min;t.exports=function(t){return t>0?o(r(t),9007199254740991):0}},function(t,n,e){"use strict";var r=e(44),o=e(52),i=e(17),u=e(3);t.exports=e(31)(Array,"Array",function(t,n){this._t=u(t),this._i=0,this._k=n},function(){var t=this._t,n=this._k,e=this._i++;return!t||e>=t.length?(this._t=void 0,o(1)):"keys"==n?o(0,e):"values"==n?o(0,t[e]):o(0,[e,t[e]])},"values"),i.Arguments=i.Array,r("keys"),r("values"),r("entries")},function(t,n){},function(t,n,e){"use strict";var r=e(59)(!0);e(31)(String,"String",function(t){this._t=String(t),this._i=0},function(){var t,n=this._t,e=this._i;return e>=n.length?{value:void 0,done:!0}:(t=r(n,e),this._i+=t.length,{value:t,done:!1})})},function(t,n,e){"use strict";var r=e(1),o=e(2),i=e(4),u=e(27),f=e(36),c=e(54).KEY,a=e(8),s=e(22),l=e(20),p=e(13),d=e(7),v=e(26),y=e(25),h=e(53),b=e(47),x=e(50),g=e(10),m=e(3),w=e(24),O=e(12),S=e(32),_=e(57),j=e(56),P=e(6),E=e(9),M=j.f,A=P.f,T=_.f,L=r.Symbol,N=r.JSON,C=N&&N.stringify,k="prototype",F=d("_hidden"),q=d("toPrimitive"),I={}.propertyIsEnumerable,B=s("symbol-registry"),D=s("symbols"),W=s("op-symbols"),H=Object[k],K="function"==typeof L,R=r.QObject,J=!R||!R[k]||!R[k].findChild,U=i&&a(function(){return 7!=S(A({},"a",{get:function(){return A(this,"a",{value:7}).a}})).a})?function(t,n,e){var r=M(H,n);r&&delete H[n],A(t,n,e),r&&t!==H&&A(H,n,r)}:A,G=function(t){var n=D[t]=S(L[k]);return n._k=t,n},$=K&&"symbol"==typeof L.iterator?function(t){return"symbol"==typeof t}:function(t){return t instanceof L},z=function(t,n,e){return t===H&&z(W,n,e),g(t),n=w(n,!0),g(e),o(D,n)?(e.enumerable?(o(t,F)&&t[F][n]&&(t[F][n]=!1),e=S(e,{enumerable:O(0,!1)})):(o(t,F)||A(t,F,O(1,{})),t[F][n]=!0),U(t,n,e)):A(t,n,e)},Y=function(t,n){g(t);for(var e,r=b(n=m(n)),o=0,i=r.length;i>o;)z(t,e=r[o++],n[e]);return t},Q=function(t,n){return void 0===n?S(t):Y(S(t),n)},X=function(t){var n=I.call(this,t=w(t,!0));return!(this===H&&o(D,t)&&!o(W,t))&&(!(n||!o(this,t)||!o(D,t)||o(this,F)&&this[F][t])||n)},V=function(t,n){if(t=m(t),n=w(n,!0),t!==H||!o(D,n)||o(W,n)){var e=M(t,n);return!e||!o(D,n)||o(t,F)&&t[F][n]||(e.enumerable=!0),e}},Z=function(t){for(var n,e=T(m(t)),r=[],i=0;e.length>i;)o(D,n=e[i++])||n==F||n==c||r.push(n);return r},tt=function(t){for(var n,e=t===H,r=T(e?W:m(t)),i=[],u=0;r.length>u;)!o(D,n=r[u++])||e&&!o(H,n)||i.push(D[n]);return i};K||(L=function(){if(this instanceof L)throw TypeError("Symbol is not a constructor!");var t=p(arguments.length>0?arguments[0]:void 0),n=function(e){this===H&&n.call(W,e),o(this,F)&&o(this[F],t)&&(this[F][t]=!1),U(this,t,O(1,e))};return i&&J&&U(H,t,{configurable:!0,set:n}),G(t)},f(L[k],"toString",function(){return this._k}),j.f=V,P.f=z,e(33).f=_.f=Z,e(19).f=X,e(34).f=tt,i&&!e(18)&&f(H,"propertyIsEnumerable",X,!0),v.f=function(t){return G(d(t))}),u(u.G+u.W+u.F*!K,{Symbol:L});for(var nt="hasInstance,isConcatSpreadable,iterator,match,replace,search,species,split,toPrimitive,toStringTag,unscopables".split(","),et=0;nt.length>et;)d(nt[et++]);for(var nt=E(d.store),et=0;nt.length>et;)y(nt[et++]);u(u.S+u.F*!K,"Symbol",{for:function(t){return o(B,t+="")?B[t]:B[t]=L(t)},keyFor:function(t){if($(t))return h(B,t);throw TypeError(t+" is not a symbol!")},useSetter:function(){J=!0},useSimple:function(){J=!1}}),u(u.S+u.F*!K,"Object",{create:Q,defineProperty:z,defineProperties:Y,getOwnPropertyDescriptor:V,getOwnPropertyNames:Z,getOwnPropertySymbols:tt}),N&&u(u.S+u.F*(!K||a(function(){var t=L();return"[null]"!=C([t])||"{}"!=C({a:t})||"{}"!=C(Object(t))})),"JSON",{stringify:function(t){if(void 0!==t&&!$(t)){for(var n,e,r=[t],o=1;arguments.length>o;)r.push(arguments[o++]);return n=r[1],"function"==typeof n&&(e=n),!e&&x(n)||(n=function(t,n){if(e&&(n=e.call(this,t,n)),!$(n))return n}),r[1]=n,C.apply(N,r)}}}),L[k][q]||e(5)(L[k],q,L[k].valueOf),l(L,"Symbol"),l(Math,"Math",!0),l(r.JSON,"JSON",!0)},function(t,n,e){e(25)("asyncIterator")},function(t,n,e){e(25)("observable")},function(t,n,e){e(62);for(var r=e(1),o=e(5),i=e(17),u=e(7)("toStringTag"),f=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],c=0;c<5;c++){var a=f[c],s=r[a],l=s&&s.prototype;l&&!l[u]&&o(l,u,a),i[a]=i.Array}},function(t,n){"use strict";var e={versions:function(){var t=window.navigator.userAgent;return{trident:t.indexOf("Trident")>-1,presto:t.indexOf("Presto")>-1,webKit:t.indexOf("AppleWebKit")>-1,gecko:t.indexOf("Gecko")>-1&&t.indexOf("KHTML")==-1,mobile:!!t.match(/AppleWebKit.*Mobile.*/),ios:!!t.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:t.indexOf("Android")>-1||t.indexOf("Linux")>-1,iPhone:t.indexOf("iPhone")>-1||t.indexOf("Mac")>-1,iPad:t.indexOf("iPad")>-1,webApp:t.indexOf("Safari")==-1,weixin:t.indexOf("MicroMessenger")==-1}}()};t.exports=e},function(t,n,e){"use strict";function r(t){return t&&t.__esModule?t:{default:t}}var o=e(40),i=r(o),u=function(){function t(t,n,e){return n||e?String.fromCharCode(n||e):o[t]||t}function n(t){return l[t]}var e=/&quot;|&lt;|&gt;|&amp;|&nbsp;|&apos;|&#(\d+);|&#(\d+)/g,r=/['<> "&]/g,o={"&quot;":'"',"&lt;":"<","&gt;":">","&amp;":"&","&nbsp;":" "},f=/\u00a0/g,c=/<br\s*\/?>/gi,a=/\r?\n/g,s=/\s/g,l={};for(var p in o)l[o[p]]=p;return o["&apos;"]="'",l["'"]="&#39;",{encode:function(t){return t?(""+t).replace(r,n).replace(a,"<br/>").replace(s,"&nbsp;"):""},decode:function(n){return n?(""+n).replace(c,"\n").replace(e,t).replace(f," "):""},encodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},encodeBase16forJSON:function(t){if(!t)return t;t=t.replace(/[\u4E00-\u9FBF]/gi,function(t){return escape(t).replace("%u","\\u")});for(var n=[],e=0,r=t.length;r>e;e++)n.push(t.charCodeAt(e).toString(16).toUpperCase());return n.join("")},decodeBase16:function(t){if(!t)return t;t+="";for(var n=[],e=0,r=t.length;r>e;e+=2)n.push(String.fromCharCode("0x"+t.slice(e,e+2)));return n.join("")},encodeObject:function(t){if(t instanceof Array)for(var n=0,e=t.length;e>n;n++)t[n]=u.encodeObject(t[n]);else if("object"==("undefined"==typeof t?"undefined":(0,i.default)(t)))for(var r in t)t[r]=u.encodeObject(t[r]);else if("string"==typeof t)return u.encode(t);return t},loadScript:function(t){var n=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(n),n.setAttribute("src",t)},addLoadEvent:function(t){var n=window.onload;"function"!=typeof window.onload?window.onload=t:window.onload=function(){n(),t()}}}}();t.exports=u},function(t,n){function e(t,n){t.classList?t.classList.add(n):t.className+=" "+n}t.exports=e},function(t,n){function e(t,n){if(t.classList)t.classList.remove(n);else{var e=new RegExp("(^|\\b)"+n.split(" ").join("|")+"(\\b|$)","gi");t.className=t.className.replace(e," ")}}t.exports=e},,,function(t,n){"use strict";function e(){var t=document.querySelector("#page-nav");if(t&&!document.querySelector("#page-nav .extend.prev")&&(t.innerHTML='<a class="extend prev disabled" rel="prev">&laquo; Prev</a>'+t.innerHTML),t&&!document.querySelector("#page-nav .extend.next")&&(t.innerHTML=t.innerHTML+'<a class="extend next disabled" rel="next">Next &raquo;</a>'),yiliaConfig&&yiliaConfig.open_in_new){var n=document.querySelectorAll(".article-entry a:not(.article-more-a)");n.forEach(function(t){var n=t.setAttribute("target");n&&""!==n||t.setAttribute("target","_blank")})}var e=document.querySelector("#js-aboutme");e&&0!==e.length&&(e.innerHTML=e.innerText)}t.exports={init:e}},,,,,,,,,function(t,n){function e(t,n){if("string"==typeof n)return t.insertAdjacentHTML("afterend",n);var e=t.nextSibling;return e?t.parentNode.insertBefore(n,e):t.parentNode.appendChild(n)}t.exports=e}])</script><script src="/./main.05aabf.js"></script><script>!function(){var e=function(e){var t=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(t),t.setAttribute("src",e)};e("/slider.885efe.js")}()</script>
+
+
+    
+<div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
+  <div class="tools-nav header-menu">
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <ul style="width: 70%">
+    
+    
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      
+        
+    </ul>
+  </div>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Python, CSV</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Python|CSV</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSV</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            2、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: true
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
+    
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+    	</section>
+    
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">xchaoinfo, &lt;/br&gt; &lt;/br&gt;计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
 
-<script src="/js/script.js"></script>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
 
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
   </div>
 </body>
 </html>

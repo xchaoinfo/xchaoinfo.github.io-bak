@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/4 | xchaoinfo的博客</title>
+  <title>Python 构建一个简单爬虫系统 (二) | xchaoinfo的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="xchaoinfo的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="Python 构建一个简单爬虫系统 (二)本文是用 Python 构建一个简单爬虫系统的第二篇，上一篇介绍了通过 requests 和 Beautifulsoup 来做一个网页的抓取和解析。本篇介绍通过 queue 和 threading 模块，使用队列和多线程来进行大规模数据的抓取。 目录 0x00·背景简介 0x01·queue、threading 基础 0x02·多线程爬虫实例  背景简介Q">
+<meta name="keywords" content="Python,爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 构建一个简单爬虫系统 (二)">
+<meta property="og:url" content="http://yoursite.com/2016/10/01/02-- Python 构建一个简单爬虫系统 二/index.html">
 <meta property="og:site_name" content="xchaoinfo的博客">
-<meta property="og:description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
+<meta property="og:description" content="Python 构建一个简单爬虫系统 (二)本文是用 Python 构建一个简单爬虫系统的第二篇，上一篇介绍了通过 requests 和 Beautifulsoup 来做一个网页的抓取和解析。本篇介绍通过 queue 和 threading 模块，使用队列和多线程来进行大规模数据的抓取。 目录 0x00·背景简介 0x01·queue、threading 基础 0x02·多线程爬虫实例  背景简介Q">
+<meta property="og:updated_time" content="2017-04-13T15:28:24.503Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xchaoinfo的博客">
-<meta name="twitter:description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
+<meta name="twitter:title" content="Python 构建一个简单爬虫系统 (二)">
+<meta name="twitter:description" content="Python 构建一个简单爬虫系统 (二)本文是用 Python 构建一个简单爬虫系统的第二篇，上一篇介绍了通过 requests 和 Beautifulsoup 来做一个网页的抓取和解析。本篇介绍通过 queue 和 threading 模块，使用队列和多线程来进行大规模数据的抓取。 目录 0x00·背景简介 0x01·queue、threading 基础 0x02·多线程爬虫实例  背景简介Q">
   
     <link rel="alternative" href="/atom.xml" title="xchaoinfo的博客" type="application/atom+xml">
   
@@ -152,36 +154,92 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-02-- Python 构建一个简单爬虫系统 二" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/13/04-- Python3 读写 csv /" class="archive-article-date">
-  	<time datetime="2017-04-13T14:46:42.461Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/04-- Python3 读写 csv /">Python3 读写 csv</a>
+    <h1 class="article-title" itemprop="name">
+      Python 构建一个简单爬虫系统 (二)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2016/10/01/02-- Python 构建一个简单爬虫系统 二/" class="archive-article-date">
+  	<time datetime="2016-10-01T13:43:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Python-构建一个简单爬虫系统-二"><a href="#Python-构建一个简单爬虫系统-二" class="headerlink" title="Python 构建一个简单爬虫系统 (二)"></a>Python 构建一个简单爬虫系统 (二)</h1><p>本文是用 Python 构建一个简单爬虫系统的第二篇，上一篇介绍了通过 requests 和 Beautifulsoup 来做一个网页的抓取和解析。本篇介绍通过 queue 和 threading 模块，使用队列和多线程来进行大规模数据的抓取。</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li>0x00·<a href="#0x00 背景简介">背景简介</a></li>
+<li>0x01·<a href="#0x01 queue、threading 基础">queue、threading 基础</a></li>
+<li>0x02·<a href="#0x02 多线程爬虫实例">多线程爬虫实例</a></li>
+</ul>
+<h2 id="背景简介"><a href="#背景简介" class="headerlink" title="背景简介"></a>背景简介</h2><p>Q1: 据说由于 GIL(全局锁) 的存在，Python 多线程很鸡肋，多线程 Python 爬虫能提高速度吗？</p>
+<p>A1: 要很好的回答这个问题，首先要搞清楚两个概念：进程与线程，I/O 密集型与计算密集型任务。</p>
+<h4 id="进程与线程"><a href="#进程与线程" class="headerlink" title="进程与线程"></a>进程与线程</h4><p>操作系统的设计，可以归结为三点：</p>
+<ol>
+<li>以多进程形式，允许多个任务同时运行；</li>
+<li>以多线程形式，允许单个任务分成不同的部分运行；</li>
+<li>提供协调机制，一方面防止进程之间和线程之间产生冲突，另一方面允许进程之间和线程之间共享资源。</li>
+</ol>
+<h4 id="I-O-密集型与计算密集型任务"><a href="#I-O-密集型与计算密集型任务" class="headerlink" title="I/O 密集型与计算密集型任务"></a>I/O 密集型与计算密集型任务</h4><p>简单的来说是频繁的进行 CPU 的计算，还是文件的读写操作。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>对于计算密集型的任务，由于 GIL 的存在使用多进程，能提高计算效率<br>对于I/O 密集型的任务，例如网络爬虫，大多数时间都是等待从网上下载文件写入到本地，使用多线程能显著提高爬虫的爬取速度。</p>
+<h2 id="queue、threading-基础"><a href="#queue、threading-基础" class="headerlink" title="queue、threading 基础"></a>queue、threading 基础</h2><h3 id="queue"><a href="#queue" class="headerlink" title="queue"></a>queue</h3><p>queue 模块提供了一个适用于多线程编程的数据结构，可以用来在线程间安全地传递消息或者其他数据，它会为提供者处理锁定，使多个线程可以安全地处理同一个 queue 实例。</p>
+<p>下面介绍一些简单的用法，更复杂的用法参考 queue 的文档</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment"># 创建一个 queue 实例</span></div><div class="line">q = queue.Queue()</div><div class="line"></div><div class="line"><span class="comment"># 向 queue 添加一个元素</span></div><div class="line">item = <span class="string">"xchaoinfo"</span></div><div class="line">q.put(item)</div><div class="line"></div><div class="line"><span class="comment"># 从 queue 取得一个元素</span></div><div class="line">data = q.get()</div><div class="line"></div><div class="line"><span class="comment"># 获取 queue 的元素的个数</span></div><div class="line">q.qsize()</div><div class="line"></div><div class="line"><span class="comment"># 判断 queue 是否为空</span></div><div class="line">q.empty()</div></pre></td></tr></table></figure>
+<h3 id="threading"><a href="#threading" class="headerlink" title="threading"></a>threading</h3><p>threading 在 _thread 模块的基础的提供多线程处理的更高级别的接口。</p>
+<p>下面介绍一些 threading 的简单用法</p>
+<p>不带参数的线程创建<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> threading</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_work</span><span class="params">()</span>:</span></div><div class="line">    print(<span class="string">"start working"</span>)</div><div class="line"></div><div class="line">t = threading.Thread(target=do_work)</div><div class="line">t.start()</div></pre></td></tr></table></figure></p>
+<p>带参数的线程创建<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> threading</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">do_work</span><span class="params">(num)</span>:</span></div><div class="line">    print(<span class="string">"start working of %s"</span> % num)</div><div class="line"></div><div class="line"><span class="comment"># args 是 tuple 类型的参数，</span></div><div class="line">t = threading.Thread(target=do_work, args=(<span class="number">1</span>,))</div><div class="line">t.start()</div></pre></td></tr></table></figure></p>
+<p>其实，更常用的方法是继承 threading.Thread 类，然后重写 run 方法</p>
+<h2 id="多线程爬虫实例"><a href="#多线程爬虫实例" class="headerlink" title="多线程爬虫实例"></a>多线程爬虫实例</h2><p>假设我们已经把要爬取的 url 存放到 url.txt 文件里，并且每行存放一个 url, 每个 url 都是一张图片的地址，我们要把所有图片下载到本地，把 url 的后面部分来作为图片的文件名<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> requests</div><div class="line"><span class="keyword">import</span> threading</div><div class="line"><span class="keyword">import</span> queue</div><div class="line"><span class="keyword">import</span> os</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># 从 txt 文件中获取 url, 并且处理下载后的文件名</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_url_fn_from_txt</span><span class="params">()</span>:</span></div><div class="line">    path = <span class="string">"img/"</span></div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(path):</div><div class="line">        os.mkdir(path)</div><div class="line">    <span class="keyword">with</span> open(<span class="string">"url.txt"</span>) <span class="keyword">as</span> fr:</div><div class="line">        url_list = [f.strip() <span class="keyword">for</span> f <span class="keyword">in</span> fr <span class="keyword">if</span> f.strip()]</div><div class="line"></div><div class="line">    url_fn_list = [tuple(u, path + u.split(<span class="string">"/"</span>)[<span class="number">-1</span>]) <span class="keyword">for</span> u <span class="keyword">in</span> url_list]</div><div class="line"></div><div class="line">    <span class="keyword">return</span> url_fn_list</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># 下载 img 的函数，下载成功返回 1 否则返回 0</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">download_img</span><span class="params">(url, fn)</span>:</span></div><div class="line">    <span class="keyword">try</span>:</div><div class="line">        <span class="keyword">if</span> os.path.exists(fn):</div><div class="line">            <span class="keyword">return</span> <span class="number">1</span></div><div class="line">        img = requests.get(url, timeout=<span class="number">3</span>)</div><div class="line">        <span class="keyword">with</span> open(fn, <span class="string">'wb'</span>) <span class="keyword">as</span> fw:</div><div class="line">            fw.write(img.content)</div><div class="line">            fw.close()</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span></div><div class="line">    <span class="keyword">except</span>:</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">DownloadThread</span><span class="params">(threading.Thread)</span>:</span></div><div class="line">    <span class="string">"""重写 run 函数"""</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, que)</span>:</span></div><div class="line">        self.que = que</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="keyword">while</span> <span class="keyword">not</span> self.que.empty():</div><div class="line">            url, fn = self.que.get()</div><div class="line">            <span class="comment"># for u in uid:</span></div><div class="line">            <span class="keyword">if</span> download_img(url, fn):</div><div class="line">                <span class="keyword">pass</span></div><div class="line">            <span class="keyword">else</span>:</div><div class="line">                self.que.put(tuple(url, fn))</div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></div><div class="line">    url_fn_list = get_url_fn_from_txt()</div><div class="line">    que = queue.Queue()</div><div class="line">    <span class="keyword">for</span> url_fn <span class="keyword">in</span> url_fn_list:</div><div class="line">        que.put(url_fn)</div><div class="line"></div><div class="line">    thread_num = <span class="number">20</span>  <span class="comment"># 线程数</span></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(thread_num):</div><div class="line">        download = DownloadThread(que)</div><div class="line">        download.start()</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    main()</div></pre></td></tr></table></figure></p>
+<p>这是比较简陋的一个实例，可以在此基础上加入更多功能。如有错误，烦请指出，不胜感激。</p>
+<p>参考：</p>
+<ol>
+<li><a href="http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html</a> (进程与线程)</li>
+<li><a href="http://blog.chinaunix.net/uid-116213-id-3086203.html" target="_blank" rel="external">http://blog.chinaunix.net/uid-116213-id-3086203.html</a> (I/O 密集型与计算密集型任务)</li>
+<li>queue 和 threading 的用法参考 Python 的文档</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>咖啡一杯，深夜提神，白兔奶糖，童年回忆<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://7xti71.com1.z0.glb.clouddn.com/wechat_pay-nonlogo.png">
+                      <span class="reward-type">微信支付</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,25 +249,103 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSV</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/10/01/02-- Python 构建一个简单爬虫系统 二/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/09/30/01-- Python 构建一个简单爬虫系统 一/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Python 构建一个简单爬虫系统 (一)
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/03/16/05-- xlwings 让你的 Excel 飞起来/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">xlwings 让你的 Excel 飞起来 </div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-    
+
 
 
           </div>
@@ -232,8 +368,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

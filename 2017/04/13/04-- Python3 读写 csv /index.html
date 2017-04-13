@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/4 | xchaoinfo的博客</title>
+  <title>Python3 读写 csv | xchaoinfo的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="xchaoinfo的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="Python3 读写 csv简介xchaoinfo 在用 Python 写爬虫的时候，百万以内的数据量，经常使用 csv 这种格式来存放数据。优点：  Python 内置模块读写方便 纯文本格式并且保持一定的数据结构 可以被 Excel 打开  以下是 Python3 下读写 csv 实例访问 https://github.com/xchaoinfo/Py-example-by-xchaoinfo">
+<meta name="keywords" content="Python,CSV">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python3 读写 csv">
+<meta property="og:url" content="http://yoursite.com/2017/04/13/04-- Python3 读写 csv /index.html">
 <meta property="og:site_name" content="xchaoinfo的博客">
-<meta property="og:description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
+<meta property="og:description" content="Python3 读写 csv简介xchaoinfo 在用 Python 写爬虫的时候，百万以内的数据量，经常使用 csv 这种格式来存放数据。优点：  Python 内置模块读写方便 纯文本格式并且保持一定的数据结构 可以被 Excel 打开  以下是 Python3 下读写 csv 实例访问 https://github.com/xchaoinfo/Py-example-by-xchaoinfo">
+<meta property="og:updated_time" content="2017-04-13T15:11:59.728Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xchaoinfo的博客">
-<meta name="twitter:description" content="计算数学研究生在读，略懂 C++, 写过一些 Python 爬虫。">
+<meta name="twitter:title" content="Python3 读写 csv">
+<meta name="twitter:description" content="Python3 读写 csv简介xchaoinfo 在用 Python 写爬虫的时候，百万以内的数据量，经常使用 csv 这种格式来存放数据。优点：  Python 内置模块读写方便 纯文本格式并且保持一定的数据结构 可以被 Excel 打开  以下是 Python3 下读写 csv 实例访问 https://github.com/xchaoinfo/Py-example-by-xchaoinfo">
   
     <link rel="alternative" href="/atom.xml" title="xchaoinfo的博客" type="application/atom+xml">
   
@@ -152,36 +154,68 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-04-- Python3 读写 csv " class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/13/04-- Python3 读写 csv /" class="archive-article-date">
-  	<time datetime="2017-04-13T14:46:42.461Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/13/04-- Python3 读写 csv /">Python3 读写 csv</a>
+    <h1 class="article-title" itemprop="name">
+      Python3 读写 csv
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/04/13/04-- Python3 读写 csv /" class="archive-article-date">
+  	<time datetime="2017-04-13T14:46:42.461Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Python3-读写-csv"><a href="#Python3-读写-csv" class="headerlink" title="Python3 读写 csv"></a>Python3 读写 csv</h2><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>xchaoinfo 在用 Python 写爬虫的时候，百万以内的数据量，经常使用 csv 这种格式来存放数据。<br>优点：</p>
+<ol>
+<li>Python 内置模块读写方便</li>
+<li>纯文本格式并且保持一定的数据结构</li>
+<li>可以被 Excel 打开</li>
+</ol>
+<p>以下是 Python3 下读写 csv 实例<br>访问 <a href="https://github.com/xchaoinfo/Py-example-by-xchaoinfo" target="_blank" rel="external">https://github.com/xchaoinfo/Py-example-by-xchaoinfo</a><br>获取详细的代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line">#!/usr/bin/env python3</div><div class="line"># -*- coding: utf-8 -*-</div><div class="line"># @Date    : 2017-02-26 22:59:55</div><div class="line"># @Author  : xchaoinfo (xchaoinfo)</div><div class="line"># @github  : https://github.com/xchaoinfo</div><div class="line"></div><div class="line">import csv</div><div class="line">&quot;&quot;&quot;</div><div class="line">data1.csv 的内容是</div><div class="line"></div><div class="line">张三,北京,25</div><div class="line">李四,上海,30</div><div class="line"></div><div class="line">data2.csv 的内容是</div><div class="line"></div><div class="line">姓名,城市,年龄</div><div class="line">张三,北京,25</div><div class="line">李四,上海,30</div><div class="line"></div><div class="line">&quot;&quot;&quot;</div><div class="line"></div><div class="line"></div><div class="line"># example 1 读取 csv 返回列表</div><div class="line">def read_csv(fn=&apos;data1.csv&apos;):</div><div class="line">    &quot;&quot;&quot;</div><div class="line">    data1.csv 中数据格式，</div><div class="line">    读取返回列表比较容易处理</div><div class="line"></div><div class="line">    &quot;&quot;&quot;</div><div class="line">    # 读取打印 - reader-example1</div><div class="line">    with open(fn, encoding=&quot;utf-8&quot;) as fr:</div><div class="line">        csvfr = csv.reader(fr)</div><div class="line">        for row in csvfr:</div><div class="line">            print(&quot;, &quot;.join(row))</div><div class="line"></div><div class="line">    # 读取后，返回列表 - reader-example</div><div class="line">    with open(fn, encoding=&quot;utf-8&quot;) as fr:</div><div class="line">        csvfr = csv.reader(fr)</div><div class="line">        rows = [row for row in csvfr]</div><div class="line">    return rows</div><div class="line"></div><div class="line"></div><div class="line"># example 2 读取 csv 返回列表</div><div class="line">def read_csv_dict(fn=&quot;data2.csv&quot;):</div><div class="line">    &quot;&quot;&quot;</div><div class="line">    data2.csv 的数据格式，</div><div class="line">    读取返回字典比较容易处理</div><div class="line"></div><div class="line">    &quot;&quot;&quot;</div><div class="line">    with open(fn, encoding=&quot;utf-8&quot;) as fr:</div><div class="line">        dict_rows = csv.DictReader(fr, fieldnames=None)</div><div class="line">        # 不指定 fieldnames 的情况下</div><div class="line">        # 默认第一行数据作为 fieldnames</div><div class="line">        for row in dict_rows:</div><div class="line">            print(row)  # row 是一个字典</div><div class="line"></div><div class="line"></div><div class="line"># example 3 list 或 tuple 写入到 csv</div><div class="line">def write_csv(fn=&quot;data1.csv&quot;):</div><div class="line">    with open(fn, &apos;w&apos;, newline=&quot;&quot;, encoding=&quot;utf-8&quot;) as fw:</div><div class="line">        fwcsv = csv.writer(fw)</div><div class="line">        one = (&quot;张三&quot;, &quot;北京&quot;, &quot;25&quot;)  # tuple</div><div class="line">        two = [&quot;李四&quot;, &quot;上海&quot;, &quot;30&quot;]  # list</div><div class="line">        fwcsv.writerow(one)</div><div class="line">        fwcsv.writerow(two)</div><div class="line"></div><div class="line"></div><div class="line"># example 4 dict 写入到 csv 中</div><div class="line">def write_dict_csv(fn=&quot;data2.csv&quot;):</div><div class="line">    dict1 = &#123;</div><div class="line">        &quot;姓名&quot;: &quot;张三&quot;,</div><div class="line">        &quot;城市&quot;: &quot;北京&quot;,</div><div class="line">        &quot;年龄&quot;: &quot;25&quot;</div><div class="line">    &#125;</div><div class="line">    dict2 = &#123;</div><div class="line">        &quot;姓名&quot;: &quot;李四&quot;,</div><div class="line">        &quot;城市&quot;: &quot;上海&quot;,</div><div class="line">        &quot;年龄&quot;: &quot;30&quot;</div><div class="line">    &#125;</div><div class="line">    fieldnames = [&quot;姓名&quot;, &quot;城市&quot;, &quot;年龄&quot;]</div><div class="line">    with open(fn, &apos;w&apos;, newline=&quot;&quot;, encoding=&quot;utf-8&quot;) as fwd:</div><div class="line">        fwdcsv = csv.DictWriter(fwd, fieldnames=fieldnames)</div><div class="line">        fwdcsv.writeheader()</div><div class="line">        fwdcsv.writerow(dict1)</div><div class="line">        fwdcsv.writerow(dict2)</div><div class="line"></div><div class="line"></div><div class="line">if __name__ == &apos;__main__&apos;:</div><div class="line">    write_dict_csv()</div><div class="line">    write_csv()</div><div class="line">    read_csv()</div><div class="line">    read_csv_dict()</div></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>咖啡一杯，深夜提神，白兔奶糖，童年回忆<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://7xti71.com1.z0.glb.clouddn.com/wechat_pay-nonlogo.png">
+                      <span class="reward-type">微信支付</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -197,19 +231,92 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/13/04-- Python3 读写 csv /" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/03/16/05-- xlwings 让你的 Excel 飞起来/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          xlwings 让你的 Excel 飞起来 
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-    
+
 
 
           </div>
@@ -232,8 +339,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
